@@ -50,6 +50,7 @@ $NivelDoRioDoceGV = PegaNivelRioDoceGV();
   </head>
 
   <body style="background-color:" onload="moveRelogio()"> 
+
   <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -93,6 +94,7 @@ function moveRelogio(){
 
         <p><div class="fb-share-button" data-href="http://joelgarciajr.com/nivelriodoce/" data-layout="box_count"></div></p>
         <p> <a data-text="Nível do Rio Doce em GV: <?php echo strip_tags($NivelDoRioDoceGV->nivel);  ?>" data-link="http://joelgarciajr.com/nivelriodoce/" class="whatsapp w3_whatsapp_btn w3_whatsapp_btn_large">Enviar por WhatsApp</a></p>
+        <p><div class="fb-send" data-href="http://joelgarciajr.com/nivelriodoce/"></div></p>
       </div>
 
       <div class="row marketing">
