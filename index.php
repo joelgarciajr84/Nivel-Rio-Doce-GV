@@ -52,28 +52,7 @@ $NivelDoRioDoceGV = PegaNivelRioDoceGV();
   <body style="background-color:" onload="moveRelogio()"> 
 
   <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<script>
 
-function moveRelogio(){ 
-    momentoAtual = new Date() 
-    hora = momentoAtual.getHours() 
-    minuto = momentoAtual.getMinutes() 
-    segundo = momentoAtual.getSeconds() 
-
-    horaImprimivel = hora + " : " + minuto + " : " + segundo 
-
-    document.form_relogio.relogio.value = horaImprimivel 
-
-    setTimeout("moveRelogio()",1000) 
-} 
-</script> 
 </script>
     <div class="container">
       <div class="header clearfix">
@@ -122,5 +101,27 @@ function moveRelogio(){
   ga('send', 'pageview');
 
 </script>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+
+function moveRelogio(){ 
+    momentoAtual = new Date() 
+    hora = momentoAtual.getHours() 
+    minuto = momentoAtual.getMinutes() 
+    segundo = momentoAtual.getSeconds() 
+
+    horaImprimivel = hora + " : " + minuto + " : " + segundo 
+
+    document.form_relogio.relogio.value = horaImprimivel 
+
+    setTimeout("moveRelogio()",1000) 
+} 
+</script> 
   </body>
 </html>
