@@ -25,28 +25,17 @@ $NivelDoRioDoceGV = PegaNivelRioDoceGV();
     <meta property="og:description"   content="Site para acompanhar em tempo real o nível do Rio Doce em Valadares" />
     <meta property="og:image"         content="http://joelgarciajr.com/nivelriodoce//assets/snapshot.png" />
     <meta property="og:description"
-          content="site para acompanhar em tempo real o nível do Rio Doce em Valadares"/>
+          content="Site para acompanhar em tempo real o nível do Rio Doce em Valadares"/>
 
-    <!-- Bootstrap core CSS -->
     <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/whatsapp.css" rel="stylesheet">
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="http://getbootstrap.com/assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
     <link href="http://getbootstrap.com/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
-    
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body style="background-color:" onload="moveRelogio()"> 
@@ -83,6 +72,7 @@ $NivelDoRioDoceGV = PegaNivelRioDoceGV();
       </div>
 
       <footer class="footer">
+      <a href="https://www.facebook.com/joelgarciajr84" target="_blank">Desenvolvido por Joel Garcia Jr :)</a>
       </footer>
 
     </div> <!-- /container -->
