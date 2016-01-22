@@ -1,7 +1,16 @@
 <?php
+error_reporting(0);
+ini_set('display_errors', 0);
+ini_set('default_socket_timeout', 10);
 function PegaNivelRioDoceGV($url = "http://saaegoval.com.br/custom/niv_rio_vis.aspx"){
+
+  if(!$html = file_get_contents($url)){
+
+    return 0;
+  }
   
   $html = file_get_contents($url);
+
   $dom = new DOMDocument('1.0');
   $dom->loadHTML($html);
 
@@ -17,3 +26,4 @@ function PegaNivelRioDoceGV($url = "http://saaegoval.com.br/custom/niv_rio_vis.a
 
   return $NivelDoRioDoceGV;
 }
+$NivelDoRioDoceGV = PegaNivelRioDoceGV();

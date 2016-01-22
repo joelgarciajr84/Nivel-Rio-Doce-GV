@@ -1,7 +1,24 @@
 <?php 
-require_once 'includes/engine.php';
+require_once 'includes/engine.php'; 
+if($NivelDoRioDoceGV == 0){?>
+    <title>Site do SAAE está OFF-LINE Tentando se conectar ...</title>
 
-$NivelDoRioDoceGV = PegaNivelRioDoceGV();
+ <meta http-equiv="refresh" content="5; URL=http://joelgarciajr.com/nivelriodoce/">
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-72646484-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<?php
+  echo "Site do SAAE está OFF-LINE ( Tentando se conectar ...)";
+  die();
+}else{
 
 ?>
 <!DOCTYPE html>
@@ -39,9 +56,18 @@ $NivelDoRioDoceGV = PegaNivelRioDoceGV();
   </head>
 
   <body style="background-color:" onload="moveRelogio()"> 
+  <div id="instafeed"></div>
 
   <div id="fb-root"></div>
-
+<script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: '644472231.745c638.40bd38ea5b1341d8853efab09df3e27e',
+        template: '<a href="{{link}}"><img src="{{image}}" /></a>'
+    });
+    feed.run();
+</script>
 </script>
     <div class="container">
       <div class="header clearfix">
@@ -115,3 +141,4 @@ function moveRelogio(){
 </script> 
   </body>
 </html>
+<?php } ?>
